@@ -23,7 +23,7 @@ import {
   getFormattedDates,
   getChartData,
   AnalyticsSummary
-} from '../data/analytics';
+} from '../../data/anayltics';
 
 // Register ChartJS components
 ChartJS.register(
