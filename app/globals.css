@@ -1,26 +1,130 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 248, 250, 252;
+  --background-end-rgb: 255, 255, 255;
+  --primary-color: 59, 130, 246;
+  --secondary-color: 99, 102, 241;
+  --accent-color: 14, 165, 233;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 15, 23, 42;
+    --background-end-rgb: 30, 41, 59;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Custom ClientNest styles */
+.progress-bar {
+  height: 0.5rem;
+  border-radius: 9999px;
+  background-color: rgb(229, 231, 235);
+  overflow: hidden;
+}
+
+.dark .progress-bar {
+  background-color: rgb(55, 65, 81);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 9999px;
+  transition-property: all;
+  transition-duration: 300ms;
+}
+
+.status-badge {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 9999px;
+}
+
+.status-in-progress {
+  background-color: rgb(219, 234, 254);
+  color: rgb(30, 64, 175);
+}
+
+.dark .status-in-progress {
+  background-color: rgb(30, 58, 138);
+  color: rgb(191, 219, 254);
+}
+
+.status-complete {
+  background-color: rgb(220, 252, 231);
+  color: rgb(22, 101, 52);
+}
+
+.dark .status-complete {
+  background-color: rgb(20, 83, 45);
+  color: rgb(187, 247, 208);
+}
+
+.file-card {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  transition-property: all;
+  transition-duration: 200ms;
+}
+
+.file-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.dark .file-card {
+  border-color: rgb(55, 65, 81);
+}
+
+.file-card:hover {
+  border-color: rgb(59, 130, 246);
+}
+
+.dark .file-card:hover {
+  border-color: rgb(37, 99, 235);
+}
+
+.message-card {
+  max-width: 80%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.message-client {
+  background-color: rgb(219, 234, 254);
+  color: rgb(30, 64, 175);
+  margin-left: auto;
+}
+
+.dark .message-client {
+  background-color: rgb(30, 58, 138);
+  color: rgb(219, 234, 254);
+}
+
+.message-dev {
+  background-color: rgb(243, 244, 246);
+  color: rgb(31, 41, 55);
+}
+
+.dark .message-dev {
+  background-color: rgb(31, 41, 55);
+  color: rgb(243, 244, 246);
 }

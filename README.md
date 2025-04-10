@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Got it! Here's the updated `README.md` with your name included as the author — **Peter Quinn** — and your website link properly formatted.
+
+---
+
+```markdown
+# ClientNest 🧩
+
+**ClientNest** is a modern, modular client dashboard built with **Next.js** and **Tailwind CSS** — designed to showcase how freelancers and agencies can manage client communication, project timelines, file sharing, and simple analytics in one place.
+
+This is a demo project used for portfolio presentation and outreach purposes. It uses static data to simulate a full working experience.
+
+---
+
+## 🔧 Tech Stack
+
+- **Framework:** Next.js (TypeScript)
+- **Styling:** Tailwind CSS
+- **Charts:** Chart.js via `react-chartjs-2`
+- **Fake Data:** Static JSON files
+- **Hosting:** Vercel (recommended)
+
+---
+
+## 📁 Project Structure
+
+```
+clientnest/
+├── components/       // Reusable UI components (Sidebar, Topbar, etc.)
+├── data/             // Static dummy data files
+├── pages/            // Page routes
+├── public/           // Assets like images, sample files
+├── styles/           // Global Tailwind styles
+├── utils/            // Helper functions
+```
+
+---
+
+## 📊 Main Features
+
+- ✅ **Project Overview**: Track client project progress with visual indicators
+- 📆 **Timeline View**: View important project milestones
+- 💬 **Message Log**: Simulated chat between dev and client
+- 📁 **File Uploads**: Fake files with upload/download UX
+- 📈 **Analytics Card**: Display weekly data via Chart.js
+
+---
+
+## 🧪 Sample Use Case
+
+> You can use this dashboard to show potential clients, agencies, or recruiters how you structure client work. It’s a clean way to display your skills in frontend design, modular architecture, and product thinking.
+
+---
 
 ## Getting Started
 
-First, run the development server:
-
+1. **Clone the repo:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/clientnest.git
+cd clientnest
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies:**
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Run the dev server:**
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Visit:**
+```
+http://localhost:3000
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📌 Next Steps (if extending)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Add user authentication (e.g. Supabase or NextAuth)
+- Hook up real file uploads
+- Add backend with project history and client-specific data
+- Deploy to Vercel or Netlify
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧠 Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Peter Quinn**  
+Full Stack Developer  
+🌐 [https://www.fullstackservicesllc.net](https://www.fullstackservicesllc.net)  
+📩 owner@fullstackservicesllc.net
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📜 License
+
+This project is for demo and educational purposes only. No license for commercial use.
+```
